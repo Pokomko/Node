@@ -6,3 +6,5 @@ console.log(getNotes);
 
 const succ = chalk.blue.inverse.bold('Success!')
 console.log(succ);
+
+console.log('comm');
