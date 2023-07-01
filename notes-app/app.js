@@ -7,4 +7,4 @@ console.log(getNotes);
 const succ = chalk.blue.inverse.bold('Success!')
 console.log(succ);
 
-let a = 'dawd';
+console.log('comm');
