@@ -8,4 +8,7 @@ setTimeout(() => {
     console.log('0 second timer');
 }, 0)
 
+debugger
+
 console.log('Stopping');
+
