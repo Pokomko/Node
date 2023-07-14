@@ -36,7 +36,7 @@ yargs.command({
             describe: 'Note title',
             demandOption: true,
             type: 'string',
-        }
+        },
     },
     handler(argv) {
         notes.removeNote(argv.title);
@@ -63,7 +63,7 @@ yargs.command({
             describe: 'Note title',
             demandOption: true,
             type: 'string',
-        }
+        },
     },
     handler(argv) {
         notes.readNote(argv.title);
