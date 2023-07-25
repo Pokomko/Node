@@ -1,14 +1,23 @@
-console.log('Starting');
+const geocode = require('./utils/geocode')
+const weather = require('./utils/weatherstack')
 
-setTimeout(() => {
-    console.log('2 second loading')
-}, 2000);
+const address = process.argv[2];
 
-
-setTimeout(() => {
-    console.log('0 second timer');
-}, 0)
-
-
-console.log('Stopping');
+if (!address) {
+    console.log('Please provide address')
+} else {
+    geocode(address, (error, { latitude, longtitude, location } = {}) => {
+        if (error) {
+            return console.log(error)
+        }
+    
+        weather(latitude, longtitude, (error, weatherdata) => {
+            if (error) {
+                return console.log(error)
+            }
+            console.log(location);
+            console.log(weatherdata);
+        });
+    })
+}
 
