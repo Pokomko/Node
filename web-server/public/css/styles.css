@@ -1,0 +1,33 @@
+h1 {
+    color: red;
+    font-size: 40px;
+}
+
+img {
+    width: 350px;
+}
+
+.p-sign {
+    position: absolute;
+    bottom: 10px;
+    left: 90%;
+    color: blue;
+}
+
+a {
+   padding-left: 5px;
+   padding-right: 5px; 
+}
+
+.body-index {
+    /*background-color: antiquewhite;*/
+    background-color: #7a7b6d
+}
+
+.body-about {
+    background-color: #426180;
+}
+
+.body-help {
+    background-color: #E8CA79;
+}
