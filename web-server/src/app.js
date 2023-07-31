@@ -48,6 +48,10 @@ app.get('/weather', (req, res) => {
     });
 })
 
+app.get('*', (req, res) => {
+    res.send('<h1 style="text-align: center; font-size: 80px;color: red">Page not exist</h1>');
+})
+
 app.listen(3000, () => {
     console.log('Starting server on port 3000');
 });
