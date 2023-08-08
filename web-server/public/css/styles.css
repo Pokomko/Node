@@ -37,7 +37,7 @@ header a {
  }
  
 .img {
-    width: 250px;
+    width: 500px;
 }
 
 .link-sign {
@@ -46,11 +46,11 @@ header a {
 }
 
 .body-about {
-    background-color: #426180;
+    background-color: #567178;
 }
 
 .body-help {
-    background-color: #E8CA79;
+    background-color: #db8f49;
 }
 
 .body-404 {
